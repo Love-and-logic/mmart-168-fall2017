@@ -52,6 +52,11 @@ const getData = () => {
             // You can test this in the browser by updating the forEach function to reverse every tweet's text
             // HINT: This is a common interview question to screen out javascript devs who don't understand the language's native functions. Google around - you might find a good solution for this problem
             // Once you've written your reverse text function, write a comment describing how it works.
+            const reverseText= (text) => {
+              return text.split('').reverse().join('')
+            }
+            // The function takes the argument and splits the word by letter. The reverse method permutes last letter to first [0], (n-1) to second[1], (n-2) to third[2] et al.
+            // Then the join method brings the letter back together. It's like a lego!
 
             // ---------------------- TASK 2 -----------------------------------
             // 2. Now, write a function called 'reverseTweet' that takes a single string as an input. If the string contains a hashtag (#), it should return the string.
@@ -60,17 +65,24 @@ const getData = () => {
             // HINT: Strings have a useful function called indexOf that you may find useful: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
             // HINT: You already have a reverseText function laying around...
 
+
             // ---------------------- DELIVERABLE -----------------------------------
             // When somebody searches for a keyword, tweets with hashtags will appear as normal. Tweets with no hashtags will be inexplicably reversed.
             // EXTRA CREDIT: Add a class to reversed tweets to make their background red. This will require modifying the existing CSS!
 
-            json.statuses.forEach((status) => {
+           const reverseTweet = json.statuses.forEach((status) => {
                 div = document.createElement('div')
                 div.className = 'tweet'
                 textNode = document.createTextNode(status.text)
                 div.appendChild(textNode)
                 document.getElementById('results').appendChild(div)
             })
+            if(reverseTweet.indexOf('#') > -1){
+              return reverseTweet
+            }
+            else{
+              return reverseText
+            }
 
         })
-}
+      }
