@@ -16,7 +16,30 @@ This homework will require some googling. As a software engineer, a lot of what 
 6. Verify that you are now on the new branch: `$ git branch` (check that your new branch has an asterik next to it).
 
 ## PART II: Reading response
-Edit README.MD and write your reading response here!
+Link to article: https://blog.pragmatists.com/top-10-es6-features-by-example-80ac878794bb
+Title: Top 10 ES6 Features by Example
+
+I was reminded of my undergraduate days where my graduate friend lamented over their qualifying exams on top of the preparations of choosing a field of study. They would read one page journal entries, and developed an allergy to the word, "obviously," for some parts were not obvious to them. For example, a paragraph would take them a whole day to parse through.
+This memory came to mind because I challenged myself to read through articles in JavaScript Weekly/FrontEndFocus that had
+unfamiliar titles.
+
+ES6/ECMAScript 6 is apparently a widely-known implementation in standardizing Javascript, and was developed by teams
+from Netscape (throwback!). ES6 is certainly relevant to what we're learning now, along with a sneak peek of what I hope we'll learn.
+There were something that cleared up confusion over some syntax, some that confused me even more, and some that I could somewhat grasp.
+
+Overall this article motivated me to Google define unfamiliar keywords, and ponder on why helper functions were created. I think the idea is, to make language less the setup, and more intuitive. This is so that developers are able to build faster, moreso than write up code with many repetitions. Below, I've made note on some of the items I stopped at to either Google, or think about.
+
+On the article's example 1, I found to have my understanding of var, const, and let not as solid as I would have thought. My perception
+of var was that is was more "flexible" than const & let. However, terminology suggests that seeing things in terms of function scope, and block scope would deem more fruitful when conversing with other developers or those in tech. However, I don't think I have the idea
+of scope at full capacity. A quick 5 minute run through on scope would be helpful! I had imagined scope to be like goggles. I have perceived function scope as a wider capacity for usage versus block.
+
+I look forward to learning more about, or exploring template strings. This may be used for setting up automated emails or notifications!
+
+List 8 is interesting as I'm unsure of what a shallow copy of an array is. I am guessing the copy is not stored in some address?
+I'm still finding some trouble grasping the Rest feature based on the example in the article. I do not see Rest method (or call?) in the example. It looks more like a shallow copy!
+
+I hope we run through how to use the Promise since it deals in receiving data after some period of time. It would probably be cool to use this feature for quantifying things in a set amount of time. For instance, view ratings during an entire season of Rick & Morty, or GoT.
+
 
 ## Part III: JavaScript Homework
 
