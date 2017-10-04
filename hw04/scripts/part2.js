@@ -21,6 +21,16 @@ const setLanguage = (code) => {
 }
 
 
+/*
+Part 2 / Step 2
+Questions
+1. The getData function adds "&lang" to the baseURL and appends the language code
+so that the webpage loads per that language. The data is printed in JSON.
+2. jsonData.statuses[0]
+3. jsonData.statuses[4].text
+4. jsonData.statuses[1].user.name
+*/
+
 const getData = () => {
     const term = document.getElementById('term').value
     const baseURL = 'https://mmart168-twitter-proxy.herokuapp.com/1.1/search/tweets.json?q=' + term
