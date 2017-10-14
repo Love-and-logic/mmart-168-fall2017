@@ -16,7 +16,11 @@ This homework will require some googling. As a software engineer, a lot of what 
 6. Verify that you are now on the new branch: `$ git branch` (check that your new branch has an asterisk next to it).
 
 ## PART II: Reading response
-Edit README.MD and write your reading response here!
+article: https://medium.freecodecamp.org/we-fired-our-top-talent-best-decision-we-ever-made-4c0a99728fde
+This article tackled something that is perhaps equally important if not more than readable code. It talks about how to build a functional working environment. It talked about building a collaborative culture within the work environment, and focus on building each others' strengths. Rick seemed to be a talented individual for Free Code Camp that can solve complex business issues/logic, however, when it came time to team building, Rick, only focused on Rick. Rick would attack or defend feedback being given and not necessarily reciprocate that would bring a team forward. Rick would also ruin any individual that would get in the way of Rick's reputation, idea, or again, brilliance. 
+Thank God (because I'm a believer in divinity) and goodness the people of Free Code Camp were able to band together and realize, even though in the absence of Rick's brilliance, much of the work can be done [with longevity], sans confusion, sans dependability, if each individual openly works through the same goals. [AND DOCUMENTED!]
+
+I think Rick thought he was tenured into his position due to his brilliance, but it goes to show, when an individual values security versus the objective/scope of the project task, it leads to project that makes a minor splash.
 
 ## Part III: JavaScript Homework
 
