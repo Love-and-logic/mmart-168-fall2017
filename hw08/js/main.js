@@ -3,6 +3,11 @@
 //------------------------------------------------------------------
 
 const name = 'John'
+let i = 1
+while(i <=100){
+  console.log(name)
+  i++
+}
 
 // Creates a list element and appends it to the unordered list in part1
 const appendListElement = (text) => {
@@ -13,6 +18,18 @@ const appendListElement = (text) => {
 }
 
 appendListElement('Welcome, ' + name + '! Make yourself comfortable.')
+
+//------------------------------------------------------------------
+// A. While Loops
+//Using a while loop, print a message (any message you want) 100 times
+//using the appendListElement function.
+//------------------------------------------------------------------
+
+let k=1
+while(k <=100){
+  appendListElement('Hi River Tam')
+  k++
+}
 
 //------------------------------------------------------------------
 // PART II: Using a for loop, write out each person’s avatar, name, and score, based on the people array
@@ -31,7 +48,7 @@ var people = [
 // use a for loop to DRY up the printNames function
 // it should loop over the people array and append
 // the users avatar pic, a greeting, and their score to the HTML
-const printNames = () => {
+  const printNames = () => {
   // Message 1
   const img1 = document.createElement('img')
   img1.src = people[0].pic
@@ -55,6 +72,8 @@ const printNames = () => {
 
   document.querySelector('#part2').appendChild(img2)
   document.querySelector('#part2').appendChild(paragraph2)
-}
+  }
 
+for(let m=0; m<people; m++){
 printNames()
+}
