@@ -1,3 +1,5 @@
+// Create comment to begin initial round of code
+
 const apiKey = 'MW9S-E7SL-26DU-VV8V'
 
 const makeStationList = () => {
