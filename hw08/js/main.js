@@ -14,6 +14,11 @@ const appendListElement = (text) => {
 
 appendListElement('Welcome, ' + name + '! Make yourself comfortable.')
 
+var i=0
+while(i<101){
+  appendListElement(i+ ' hours later')
+  i++
+}
 //------------------------------------------------------------------
 // PART II: Using a for loop, write out each person’s avatar, name, and score, based on the people array
 //------------------------------------------------------------------
@@ -26,6 +31,7 @@ var people = [
      { name: 'Jasper', pic: 'https://3.bp.blogspot.com/-_3f5QzVwocE/U3G4_PeOoTI/AAAAAAAAeC0/uanC3ua1cu4/s1600/OldSpongeBobStock5-25-13.png', score: 600 },
      { name: 'Malik', pic: 'http://knight.gamebanana.com/img/ico/sprays/patrick_star_preview_2.png', score: 40 }
 ]
+
 
 
 // use a for loop to DRY up the printNames function
@@ -56,5 +62,5 @@ const printNames = () => {
   document.querySelector('#part2').appendChild(img2)
   document.querySelector('#part2').appendChild(paragraph2)
 }
-
 printNames()
+printNames(people[3])
