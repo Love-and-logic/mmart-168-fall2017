@@ -3,11 +3,6 @@
 //------------------------------------------------------------------
 
 const name = 'John'
-let i = 1
-while(i <=100){
-  console.log(name)
-  i++
-}
 
 // Creates a list element and appends it to the unordered list in part1
 const appendListElement = (text) => {
@@ -19,18 +14,11 @@ const appendListElement = (text) => {
 
 appendListElement('Welcome, ' + name + '! Make yourself comfortable.')
 
-//------------------------------------------------------------------
-// A. While Loops
-//Using a while loop, print a message (any message you want) 100 times
-//using the appendListElement function.
-//------------------------------------------------------------------
-
-let k=1
-while(k <=100){
-  appendListElement('Hi River Tam')
-  k++
+var i=0
+while(i<101){
+  appendListElement(i+ ' hours later')
+  i++
 }
-
 //------------------------------------------------------------------
 // PART II: Using a for loop, write out each person’s avatar, name, and score, based on the people array
 //------------------------------------------------------------------
@@ -45,35 +33,45 @@ var people = [
 ]
 
 
+
 // use a for loop to DRY up the printNames function
 // it should loop over the people array and append
 // the users avatar pic, a greeting, and their score to the HTML
-  const printNames = () => {
+const printNames = () => {
   // Message 1
-  const img1 = document.createElement('img')
-  img1.src = people[0].pic
-  img1.classList.add('avatar')
+for(var j=0; j<people.length; j++){
+  const imgj= document.createElement('img')
+  imgj.src= people[j].pic
+  imgj.classList.add('avatar')
 
-  const paragraph1 = document.createElement('p')
-  const text1 = document.createTextNode('Welcome, ' + people[0].name + '! Your score is: ' + people[0].score)
-  paragraph1.appendChild(text1)
+  const paragraphj = document.createElement('p')
+  const textj = document.createTextNode('Welcome, ' + people[j].name + '! Your score is: ' + people[j].score)
+  paragraphj.appendChild(textj)
 
-  document.querySelector('#part2').appendChild(img1)
-  document.querySelector('#part2').appendChild(paragraph1)
-
-  // Message 2
-  const img2 = document.createElement('img')
-  img2.src = people[1].pic
-  img2.classList.add('avatar')
-
-  const paragraph2 = document.createElement('p')
-  const text2 = document.createTextNode('Welcome, ' + people[1].name + '! Your score is: ' + people[1].score)
-  paragraph2.appendChild(text2)
-
-  document.querySelector('#part2').appendChild(img2)
-  document.querySelector('#part2').appendChild(paragraph2)
-  }
-
-for(let m=0; m<people; m++){
-printNames()
+  document.querySelector('#part2').appendChild(imgj)
+  document.querySelector('#part2').appendChild(paragraphj)
 }
+  // const img1 = document.createElement('img')
+  // img1.src = people[0].pic
+  // img1.classList.add('avatar')
+  //
+  // const paragraph1 = document.createElement('p')
+  // const text1 = document.createTextNode('Welcome, ' + people[0].name + '! Your score is: ' + people[0].score)
+  // paragraph1.appendChild(text1)
+  //
+  // document.querySelector('#part2').appendChild(img1)
+  // document.querySelector('#part2').appendChild(paragraph1)
+  //
+  // // Message 2
+  // const img2 = document.createElement('img')
+  // img2.src = people[1].pic
+  // img2.classList.add('avatar')
+  //
+  // const paragraph2 = document.createElement('p')
+  // const text2 = document.createTextNode('Welcome, ' + people[1].name + '! Your score is: ' + people[1].score)
+  // paragraph2.appendChild(text2)
+  //
+  // document.querySelector('#part2').appendChild(img2)
+  // document.querySelector('#part2').appendChild(paragraph2)
+}
+printNames()
