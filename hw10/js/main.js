@@ -17,20 +17,6 @@ const makeStationList = () => {
               option1.innerHTML=station.name
               document.getElementById('station_list').appendChild(option1)
           })
-            //create an option element
-            // const paragraph= document.createElement("p")
-            // paragraph.innerHTML = station.name
-            // document.getElementById('results').appendChild(paragraph)
-
-            // const option= document.createElement("option")
-            // option.innerHTML=station.name
-
-            // const stations= json.stations.station
-            // stations.forEach((station)=>{
-            //   console.log(station.name)
-            // })
-            // for(let i=0; i<stations.length; i++){
-
             // PART III.A.: Use a loop to populate the select menu with *ALL*
             // of the stations that are returned from the BART data feed:
             // const option1 = document.createElement("option")
@@ -47,7 +33,8 @@ const getArrivalTimes = () => {
     const stationList = document.getElementById('station_list')
     // PART III.B.1: The bartStationCode should read from the list and query
     // for the corresponding station
-    const bartStationCode = 'DBRK'
+    const bartStationCode = station.abbr
+    console.log(station.abbr)
     console.log('Selected Station Code:', bartStationCode)
     let url = 'https://api.bart.gov/api/etd.aspx?key=' + apiKey + '&cmd=etd' +
                 '&orig=' + bartStationCode + '&json=y'
